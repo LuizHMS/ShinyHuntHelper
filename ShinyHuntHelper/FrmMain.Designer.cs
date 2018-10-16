@@ -61,6 +61,8 @@
             this.pcbTarget = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbxCredits = new System.Windows.Forms.GroupBox();
+            this.llbPayPal = new System.Windows.Forms.LinkLabel();
+            this.lblPayPal = new System.Windows.Forms.Label();
             this.llbGit = new System.Windows.Forms.LinkLabel();
             this.lblGit = new System.Windows.Forms.Label();
             this.llbTwich = new System.Windows.Forms.LinkLabel();
@@ -435,6 +437,8 @@
             // 
             // gbxCredits
             // 
+            this.gbxCredits.Controls.Add(this.llbPayPal);
+            this.gbxCredits.Controls.Add(this.lblPayPal);
             this.gbxCredits.Controls.Add(this.llbGit);
             this.gbxCredits.Controls.Add(this.lblGit);
             this.gbxCredits.Controls.Add(this.llbTwich);
@@ -450,10 +454,30 @@
             this.gbxCredits.TabStop = false;
             this.gbxCredits.Text = "Credits";
             // 
+            // llbPayPal
+            // 
+            this.llbPayPal.AutoSize = true;
+            this.llbPayPal.Location = new System.Drawing.Point(61, 128);
+            this.llbPayPal.Name = "llbPayPal";
+            this.llbPayPal.Size = new System.Drawing.Size(45, 13);
+            this.llbPayPal.TabIndex = 9;
+            this.llbPayPal.TabStop = true;
+            this.llbPayPal.Text = "Donate!";
+            this.llbPayPal.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbPayPal_LinkClicked);
+            // 
+            // lblPayPal
+            // 
+            this.lblPayPal.AutoSize = true;
+            this.lblPayPal.Location = new System.Drawing.Point(19, 128);
+            this.lblPayPal.Name = "lblPayPal";
+            this.lblPayPal.Size = new System.Drawing.Size(40, 13);
+            this.lblPayPal.TabIndex = 8;
+            this.lblPayPal.Text = "PayPal";
+            // 
             // llbGit
             // 
             this.llbGit.AutoSize = true;
-            this.llbGit.Location = new System.Drawing.Point(61, 118);
+            this.llbGit.Location = new System.Drawing.Point(61, 105);
             this.llbGit.Name = "llbGit";
             this.llbGit.Size = new System.Drawing.Size(50, 13);
             this.llbGit.TabIndex = 7;
@@ -464,7 +488,7 @@
             // lblGit
             // 
             this.lblGit.AutoSize = true;
-            this.lblGit.Location = new System.Drawing.Point(19, 118);
+            this.lblGit.Location = new System.Drawing.Point(19, 105);
             this.lblGit.Name = "lblGit";
             this.lblGit.Size = new System.Drawing.Size(43, 13);
             this.lblGit.TabIndex = 6;
@@ -473,7 +497,7 @@
             // llbTwich
             // 
             this.llbTwich.AutoSize = true;
-            this.llbTwich.Location = new System.Drawing.Point(61, 90);
+            this.llbTwich.Location = new System.Drawing.Point(61, 83);
             this.llbTwich.Name = "llbTwich";
             this.llbTwich.Size = new System.Drawing.Size(50, 13);
             this.llbTwich.TabIndex = 5;
@@ -484,7 +508,7 @@
             // lblTwitch
             // 
             this.lblTwitch.AutoSize = true;
-            this.lblTwitch.Location = new System.Drawing.Point(19, 90);
+            this.lblTwitch.Location = new System.Drawing.Point(19, 83);
             this.lblTwitch.Name = "lblTwitch";
             this.lblTwitch.Size = new System.Drawing.Size(42, 13);
             this.lblTwitch.TabIndex = 4;
@@ -493,7 +517,7 @@
             // llbTwitter
             // 
             this.llbTwitter.AutoSize = true;
-            this.llbTwitter.Location = new System.Drawing.Point(61, 62);
+            this.llbTwitter.Location = new System.Drawing.Point(61, 53);
             this.llbTwitter.Name = "llbTwitter";
             this.llbTwitter.Size = new System.Drawing.Size(73, 13);
             this.llbTwitter.TabIndex = 3;
@@ -504,7 +528,7 @@
             // lblTwitter
             // 
             this.lblTwitter.AutoSize = true;
-            this.lblTwitter.Location = new System.Drawing.Point(19, 62);
+            this.lblTwitter.Location = new System.Drawing.Point(19, 53);
             this.lblTwitter.Name = "lblTwitter";
             this.lblTwitter.Size = new System.Drawing.Size(45, 13);
             this.lblTwitter.TabIndex = 2;
@@ -713,6 +737,8 @@
         private System.Windows.Forms.Label lblTwitch;
         private System.Windows.Forms.LinkLabel llbGit;
         private System.Windows.Forms.Label lblGit;
+        private System.Windows.Forms.LinkLabel llbPayPal;
+        private System.Windows.Forms.Label lblPayPal;
     }
 }
 

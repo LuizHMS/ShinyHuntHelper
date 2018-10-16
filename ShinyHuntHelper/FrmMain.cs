@@ -1164,5 +1164,10 @@ namespace ShinyHuntHelper
         {
             System.Diagnostics.Process.Start("https://github.com/LuizHMS");
         }
+
+        private void llbPayPal_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ZUR38ZV7RMWN");
+        }
     }
 }
