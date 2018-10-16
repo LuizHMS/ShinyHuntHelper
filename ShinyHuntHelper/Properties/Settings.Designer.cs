@@ -47,18 +47,6 @@ namespace ShinyHuntHelper.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CurrentTarget {
-            get {
-                return ((int)(this["CurrentTarget"]));
-            }
-            set {
-                this["CurrentTarget"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public uint AddKey {
             get {
                 return ((uint)(this["AddKey"]));

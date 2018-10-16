@@ -45,7 +45,7 @@
             this.pcbPopUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pcbPopUp.TabIndex = 0;
             this.pcbPopUp.TabStop = false;
-            this.pcbPopUp.Click += new System.EventHandler(this.pcbPopUp_Click);
+            //this.pcbPopUp.Click += new System.EventHandler(this.pcbPopUp_Click);
             this.pcbPopUp.DoubleClick += new System.EventHandler(this.pcbPopUp_DoubleClick);
             // 
             // btnColorDialog

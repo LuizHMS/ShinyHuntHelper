@@ -35,8 +35,6 @@ namespace ShinyHuntHelper
         private string FileNameLastShinyName = "LastShinyName.txt";
         private string FileNameLastShinyNum = "LastShinyNum.txt";
         private string FileNameLastShinyRE = "LastShinyRE.txt";
-
-        List<clsPokemon> PokeShinies = new List<clsPokemon>();
         #region Pokemon List
         Object[] Pokemons = new object[] {
             "Pokémon",
@@ -778,17 +776,14 @@ namespace ShinyHuntHelper
 
                 if (SavePath != "")
                 {
-                    string aux = "";
+                    string encontros = "";
                     txtSavePath.Text = SavePath;
 
-                    StreamReader File = new StreamReader(SavePath + "\\" + FileNameNumRESR);
-                    aux = File.ReadLine();
-                    File.Close();
-                    txtEncontros.Text = aux;
-                }
-            }
-
-            #region Iniciar arquivos
+                    StreamReader arquivo = new StreamReader(SavePath + "\\" + FileNameNumRESR);
+                    encontros = arquivo.ReadLine();
+                    arquivo.Close();
+                    txtEncontros.Text = encontros;
+ #region Iniciar arquivos
             if (File.Exists(SavePath + "\\" + FileNamePokemonList))
             {
                 StreamReader file = new StreamReader(SavePath + "\\" + FileNamePokemonList);
@@ -826,7 +821,25 @@ namespace ShinyHuntHelper
                 StreamWriter newFile = new StreamWriter(SavePath + "\\" + FileNameGameVersion);
                 newFile.Close();
             }
+            if (File.Exists(SavePath + "\\"+ FileNameTargetNum))
+            {
+                string aux = "";
+                StreamReader file = new StreamReader(SavePath + "\\" + FileNameTargetNum);
+                aux = file.ReadLine();
+                file.Close();
+                cbxTarget.SelectedIndex = int.Parse(aux);
+            }
+            else
+            {
+                StreamWriter newFile = new StreamWriter(SavePath + "\\" + FileNameTargetNum);
+                newFile.Close();
+            }
             #endregion
+
+                }
+            }
+
+           
 
             if (txtAddKey.Text == "" && ShinyHuntHelper.Properties.Settings.Default.AddKey > 0)
                 hook.RegisterHotKey(ShinyHuntHelper.Properties.Settings.Default.AddKey);
@@ -840,10 +853,7 @@ namespace ShinyHuntHelper
             if (txtPhase.Text == "")
             {
                 txtPhase.Text = "1";
-            }
-
-            cbxTarget.SelectedIndex = ShinyHuntHelper.Properties.Settings.Default.CurrentTarget;
-
+            } 
 
             // register the event that is fired after the key press.
             hook.KeyPressed +=
@@ -852,16 +862,20 @@ namespace ShinyHuntHelper
         }
         void hook_KeyPressed(object sender, KeyPressedEventArgs e)
         {
-            // show the keys pressed in a label.
+           
             if ((uint)e.Key == ShinyHuntHelper.Properties.Settings.Default.AddKey)
             {
                 int result = int.Parse(txtEncontros.Text) + 1;
+                int session = int.Parse(txtSessionRE.Text) + 1;
                 txtEncontros.Text = result.ToString();
+                txtSessionRE.Text = session.ToString();
             }
             if ((uint)e.Key == ShinyHuntHelper.Properties.Settings.Default.SubKey)
             {
                 int result = int.Parse(txtEncontros.Text) - 1;
+                int session = int.Parse(txtSessionRE.Text) - 1;
                 txtEncontros.Text = result.ToString();
+                txtSessionRE.Text = session.ToString();
             }
         }
         private void btnSavePathSearch_Click(object sender, EventArgs e)
@@ -914,8 +928,6 @@ namespace ShinyHuntHelper
         {
             if (cbxTarget.SelectedIndex > 0)
             {
-                ShinyHuntHelper.Properties.Settings.Default.CurrentTarget = cbxTarget.SelectedIndex;
-                ShinyHuntHelper.Properties.Settings.Default.Save();
                 if (SavePath != "")
                 {
                     StreamWriter newFile = new StreamWriter(SavePath + "\\" + FileNameTargetName);
@@ -1016,10 +1028,27 @@ namespace ShinyHuntHelper
 
         private void btnShinyGet_Click(object sender, EventArgs e)
         {
+            string header = "Number" + "\t" +
+                "Name" + "\t" +
+                "Sprite" + "\t" +
+                "Local" + "\t" +
+                "Game Version" + "\t" +
+                "RE / SR" + "\t" +
+                "Phase" + "\t" +
+                "Date";
+            string mensagem = cbxTarget.SelectedIndex + "\t" +
+                cbxTarget.SelectedItem + "\t" + "\t" +
+                txtLocal.Text + "\t" +
+                txtGameVersion.Text + "\t" +
+                txtEncontros.Text + "\t" +
+                txtPhase.Text + "\t" +
+                DateTime.Now;
+            Clipboard.SetText(mensagem);
+            MessageBox.Show("Text sent to Clipboard:\r\n\r\n" +
+                 header + "\r\n" +
+                mensagem, "Congratz on the new Shiny");
             SaveLastShiny();
-           
-            clsPokemon NewShiny = new clsPokemon(PokeShinies.Count, cbxTarget.SelectedIndex, cbxTarget.SelectedText, 
-                                                txtLocal.Text,int.Parse(txtEncontros.Text), int.Parse(txtPhase.Text));
+
             txtEncontros.Text = "0";
 
             if (int.Parse(txtPhase.Text) > 1)
@@ -1030,6 +1059,26 @@ namespace ShinyHuntHelper
 
         private void btnNotMyShiny_Click(object sender, EventArgs e)
         {
+            string header = "Number" + "\t" +
+                "Name" + "\t" +
+                "Sprite" + "\t" +
+                "Local" + "\t" +
+                "Game Version" + "\t" +
+                "RE / SR" + "\t" +
+                "Phase" + "\t" +
+                "Date";
+            string mensagem = cbxMissTarget.SelectedIndex + "\t" +
+                cbxMissTarget.SelectedItem + "\t" + "\t" +
+                txtLocal.Text + "\t" +
+                txtGameVersion.Text + "\t" +
+                txtEncontros.Text + "\t" +
+                txtPhase.Text + "\t" +
+                DateTime.Now;
+            Clipboard.SetText(mensagem);
+            MessageBox.Show("Text sent to Clipboard:\r\n\r\n" +
+                 header + "\r\n" +
+                mensagem);
+
             SaveLastShiny(true);
             int result = int.Parse(txtPhase.Text) + 1;
             txtPhase.Text = result.ToString();
@@ -1038,38 +1087,78 @@ namespace ShinyHuntHelper
 
         private void SaveLastShiny(bool notTarget = false)
         {
-            StreamWriter newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyName);
-            if (notTarget)
+            if (SavePath != "")
             {
-                newFile.Write(cbxMissTarget.SelectedItem);
-            }
-            else
-            {
-                newFile.Write(cbxTarget.SelectedItem);
-            }
-            newFile.Close();
+                StreamWriter newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyName);
+                if (notTarget)
+                {
+                    newFile.Write(cbxMissTarget.SelectedItem);
+                }
+                else
+                {
+                    newFile.Write(cbxTarget.SelectedItem);
+                }
+                newFile.Close();
 
-            newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyNum);
-            if (notTarget)
-            {
-                newFile.Write(cbxMissTarget.SelectedIndex);
-            }
-            else
-            {
-                newFile.Write(cbxTarget.SelectedIndex);
-            }
-            
-            newFile.Close();
+                newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyNum);
+                if (notTarget)
+                {
+                    newFile.Write(cbxMissTarget.SelectedIndex);
+                }
+                else
+                {
+                    newFile.Write(cbxTarget.SelectedIndex);
+                }
 
-            newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyRE);
-            newFile.Write(txtEncontros.Text);
-            newFile.Close();
+                newFile.Close();
+
+                newFile = new StreamWriter(SavePath + "\\" + FileNameLastShinyRE);
+                newFile.Write(txtEncontros.Text);
+                newFile.Close(); 
+            }
         }
 
         private void btnPopUp_Click(object sender, EventArgs e)
         {
-            frmPopup novo = new frmPopup(pcbTarget.ImageLocation);
-            novo.Show();
+            if (File.Exists(pcbTarget.ImageLocation))
+            {
+                frmPopup novo = new frmPopup(pcbTarget.ImageLocation);
+                novo.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Select a pokémon first!");
+            }
+        }
+
+        private void btnNewRE_Click(object sender, EventArgs e)
+        {
+            txtEncontros.Text = txtNewRE.Text;
+        }
+
+        private void txtNewRE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+
+        }
+
+        private void llbTwitter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://twitter.com/LuizHMS22");
+        }
+
+        private void llbTwich_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.twitch.tv/luizhms");
+        }
+
+        private void llbGit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/LuizHMS");
         }
     }
 }

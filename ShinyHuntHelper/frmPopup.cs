@@ -19,6 +19,7 @@ namespace ShinyHuntHelper
         {
             InitializeComponent();
             pcbPopUp.ImageLocation = imgLink;
+            this.Text = imgLink;
             offsetWidth = pcbPopUp.Width - this.Width;
             offsetHeight = pcbPopUp.Height - this.Height;
 
@@ -54,10 +55,10 @@ namespace ShinyHuntHelper
             
         }
 
-        private void pcbPopUp_Click(object sender, EventArgs e)
-        {
+        //private void pcbPopUp_Click(object sender, EventArgs e)
+        //{
 
-        }
+        //}
 
     }
 }

@@ -31,6 +31,14 @@
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNewRE = new System.Windows.Forms.Button();
+            this.txtSessionRE = new System.Windows.Forms.TextBox();
+            this.lblSessionRE = new System.Windows.Forms.Label();
+            this.lblNewRE = new System.Windows.Forms.Label();
+            this.txtNewRE = new System.Windows.Forms.TextBox();
+            this.btnPopUp = new System.Windows.Forms.Button();
+            this.cbxMissTarget = new System.Windows.Forms.ComboBox();
+            this.lblMissTarget = new System.Windows.Forms.Label();
             this.txtUnluck = new System.Windows.Forms.TextBox();
             this.lblUnluck = new System.Windows.Forms.Label();
             this.txtGameVersion = new System.Windows.Forms.TextBox();
@@ -51,14 +59,6 @@
             this.txtEncontros = new System.Windows.Forms.TextBox();
             this.lblEncontros = new System.Windows.Forms.Label();
             this.pcbTarget = new System.Windows.Forms.PictureBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.gbxSummary = new System.Windows.Forms.GroupBox();
-            this.txtAverageEncounter = new System.Windows.Forms.TextBox();
-            this.lblAverageEncounter = new System.Windows.Forms.Label();
-            this.txtTotalEncounter = new System.Windows.Forms.TextBox();
-            this.lblTotalEncounter = new System.Windows.Forms.Label();
-            this.txtTotalShiny = new System.Windows.Forms.TextBox();
-            this.lblTotalShiny = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gbxTeclas = new System.Windows.Forms.GroupBox();
             this.btnSaveHotkeys = new System.Windows.Forms.Button();
@@ -71,25 +71,29 @@
             this.txtSavePath = new System.Windows.Forms.TextBox();
             this.lblDestino = new System.Windows.Forms.Label();
             this.fbdSavePath = new System.Windows.Forms.FolderBrowserDialog();
-            this.lblMissTarget = new System.Windows.Forms.Label();
-            this.cbxMissTarget = new System.Windows.Forms.ComboBox();
-            this.btnPopUp = new System.Windows.Forms.Button();
+            this.gbxCredits = new System.Windows.Forms.GroupBox();
+            this.lblCredits1 = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
+            this.lblTwitter = new System.Windows.Forms.Label();
+            this.llbTwitter = new System.Windows.Forms.LinkLabel();
+            this.lblTwitch = new System.Windows.Forms.Label();
+            this.llbTwich = new System.Windows.Forms.LinkLabel();
+            this.lblGit = new System.Windows.Forms.Label();
+            this.llbGit = new System.Windows.Forms.LinkLabel();
             this.tabMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbxGen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTarget)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            this.gbxSummary.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.gbxTeclas.SuspendLayout();
             this.gbxArquivos.SuspendLayout();
+            this.gbxCredits.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
             // 
             this.tabMain.Controls.Add(this.tabPage1);
-            this.tabMain.Controls.Add(this.tabPage3);
             this.tabMain.Controls.Add(this.tabPage2);
             this.tabMain.Location = new System.Drawing.Point(12, 12);
             this.tabMain.Name = "tabMain";
@@ -110,6 +114,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnNewRE);
+            this.groupBox1.Controls.Add(this.txtSessionRE);
+            this.groupBox1.Controls.Add(this.lblSessionRE);
+            this.groupBox1.Controls.Add(this.lblNewRE);
+            this.groupBox1.Controls.Add(this.txtNewRE);
             this.groupBox1.Controls.Add(this.btnPopUp);
             this.groupBox1.Controls.Add(this.cbxMissTarget);
             this.groupBox1.Controls.Add(this.lblMissTarget);
@@ -136,9 +145,84 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Target";
             // 
+            // btnNewRE
+            // 
+            this.btnNewRE.Location = new System.Drawing.Point(332, 207);
+            this.btnNewRE.Name = "btnNewRE";
+            this.btnNewRE.Size = new System.Drawing.Size(96, 23);
+            this.btnNewRE.TabIndex = 28;
+            this.btnNewRE.Text = "Set new RE/SR";
+            this.btnNewRE.UseVisualStyleBackColor = true;
+            this.btnNewRE.Click += new System.EventHandler(this.btnNewRE_Click);
+            // 
+            // txtSessionRE
+            // 
+            this.txtSessionRE.Location = new System.Drawing.Point(453, 209);
+            this.txtSessionRE.Name = "txtSessionRE";
+            this.txtSessionRE.ReadOnly = true;
+            this.txtSessionRE.Size = new System.Drawing.Size(118, 20);
+            this.txtSessionRE.TabIndex = 27;
+            this.txtSessionRE.Text = "0";
+            // 
+            // lblSessionRE
+            // 
+            this.lblSessionRE.AutoSize = true;
+            this.lblSessionRE.Location = new System.Drawing.Point(452, 193);
+            this.lblSessionRE.Name = "lblSessionRE";
+            this.lblSessionRE.Size = new System.Drawing.Size(119, 13);
+            this.lblSessionRE.TabIndex = 26;
+            this.lblSessionRE.Text = "This Session RE/SR(s):";
+            // 
+            // lblNewRE
+            // 
+            this.lblNewRE.AutoSize = true;
+            this.lblNewRE.Location = new System.Drawing.Point(199, 193);
+            this.lblNewRE.Name = "lblNewRE";
+            this.lblNewRE.Size = new System.Drawing.Size(89, 13);
+            this.lblNewRE.TabIndex = 24;
+            this.lblNewRE.Text = "Set New RE/SR:";
+            // 
+            // txtNewRE
+            // 
+            this.txtNewRE.Location = new System.Drawing.Point(202, 209);
+            this.txtNewRE.Name = "txtNewRE";
+            this.txtNewRE.Size = new System.Drawing.Size(118, 20);
+            this.txtNewRE.TabIndex = 23;
+            this.txtNewRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNewRE_KeyPress);
+            // 
+            // btnPopUp
+            // 
+            this.btnPopUp.Location = new System.Drawing.Point(56, 204);
+            this.btnPopUp.Name = "btnPopUp";
+            this.btnPopUp.Size = new System.Drawing.Size(75, 23);
+            this.btnPopUp.TabIndex = 22;
+            this.btnPopUp.Text = "Pop Up Image";
+            this.btnPopUp.UseVisualStyleBackColor = true;
+            this.btnPopUp.Click += new System.EventHandler(this.btnPopUp_Click);
+            // 
+            // cbxMissTarget
+            // 
+            this.cbxMissTarget.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cbxMissTarget.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxMissTarget.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMissTarget.FormattingEnabled = true;
+            this.cbxMissTarget.Location = new System.Drawing.Point(451, 254);
+            this.cbxMissTarget.Name = "cbxMissTarget";
+            this.cbxMissTarget.Size = new System.Drawing.Size(121, 21);
+            this.cbxMissTarget.TabIndex = 21;
+            // 
+            // lblMissTarget
+            // 
+            this.lblMissTarget.AutoSize = true;
+            this.lblMissTarget.Location = new System.Drawing.Point(451, 239);
+            this.lblMissTarget.Name = "lblMissTarget";
+            this.lblMissTarget.Size = new System.Drawing.Size(65, 13);
+            this.lblMissTarget.TabIndex = 20;
+            this.lblMissTarget.Text = "Miss Target:";
+            // 
             // txtUnluck
             // 
-            this.txtUnluck.Location = new System.Drawing.Point(452, 158);
+            this.txtUnluck.Location = new System.Drawing.Point(455, 161);
             this.txtUnluck.Name = "txtUnluck";
             this.txtUnluck.ReadOnly = true;
             this.txtUnluck.Size = new System.Drawing.Size(100, 20);
@@ -147,7 +231,7 @@
             // lblUnluck
             // 
             this.lblUnluck.AutoSize = true;
-            this.lblUnluck.Location = new System.Drawing.Point(449, 142);
+            this.lblUnluck.Location = new System.Drawing.Point(452, 145);
             this.lblUnluck.Name = "lblUnluck";
             this.lblUnluck.Size = new System.Drawing.Size(55, 13);
             this.lblUnluck.TabIndex = 18;
@@ -155,7 +239,7 @@
             // 
             // txtGameVersion
             // 
-            this.txtGameVersion.Location = new System.Drawing.Point(326, 207);
+            this.txtGameVersion.Location = new System.Drawing.Point(452, 110);
             this.txtGameVersion.Name = "txtGameVersion";
             this.txtGameVersion.Size = new System.Drawing.Size(120, 20);
             this.txtGameVersion.TabIndex = 17;
@@ -164,7 +248,7 @@
             // lblGameVersion
             // 
             this.lblGameVersion.AutoSize = true;
-            this.lblGameVersion.Location = new System.Drawing.Point(326, 191);
+            this.lblGameVersion.Location = new System.Drawing.Point(452, 94);
             this.lblGameVersion.Name = "lblGameVersion";
             this.lblGameVersion.Size = new System.Drawing.Size(76, 13);
             this.lblGameVersion.TabIndex = 16;
@@ -172,7 +256,7 @@
             // 
             // txtLocal
             // 
-            this.txtLocal.Location = new System.Drawing.Point(326, 158);
+            this.txtLocal.Location = new System.Drawing.Point(329, 110);
             this.txtLocal.Name = "txtLocal";
             this.txtLocal.Size = new System.Drawing.Size(120, 20);
             this.txtLocal.TabIndex = 15;
@@ -181,7 +265,7 @@
             // lblLocal
             // 
             this.lblLocal.AutoSize = true;
-            this.lblLocal.Location = new System.Drawing.Point(326, 142);
+            this.lblLocal.Location = new System.Drawing.Point(329, 94);
             this.lblLocal.Name = "lblLocal";
             this.lblLocal.Size = new System.Drawing.Size(36, 13);
             this.lblLocal.TabIndex = 14;
@@ -189,7 +273,7 @@
             // 
             // txtPhase
             // 
-            this.txtPhase.Location = new System.Drawing.Point(202, 158);
+            this.txtPhase.Location = new System.Drawing.Point(331, 161);
             this.txtPhase.Name = "txtPhase";
             this.txtPhase.ReadOnly = true;
             this.txtPhase.Size = new System.Drawing.Size(118, 20);
@@ -198,7 +282,7 @@
             // lblPhase
             // 
             this.lblPhase.AutoSize = true;
-            this.lblPhase.Location = new System.Drawing.Point(199, 145);
+            this.lblPhase.Location = new System.Drawing.Point(329, 145);
             this.lblPhase.Name = "lblPhase";
             this.lblPhase.Size = new System.Drawing.Size(40, 13);
             this.lblPhase.TabIndex = 12;
@@ -206,7 +290,7 @@
             // 
             // btnNotMyShiny
             // 
-            this.btnNotMyShiny.Location = new System.Drawing.Point(202, 256);
+            this.btnNotMyShiny.Location = new System.Drawing.Point(332, 252);
             this.btnNotMyShiny.Name = "btnNotMyShiny";
             this.btnNotMyShiny.Size = new System.Drawing.Size(96, 23);
             this.btnNotMyShiny.TabIndex = 11;
@@ -216,7 +300,7 @@
             // 
             // btnShinyGet
             // 
-            this.btnShinyGet.Location = new System.Drawing.Point(349, 256);
+            this.btnShinyGet.Location = new System.Drawing.Point(202, 252);
             this.btnShinyGet.Name = "btnShinyGet";
             this.btnShinyGet.Size = new System.Drawing.Size(97, 23);
             this.btnShinyGet.TabIndex = 10;
@@ -311,7 +395,7 @@
             // 
             // txtEncontros
             // 
-            this.txtEncontros.Location = new System.Drawing.Point(202, 207);
+            this.txtEncontros.Location = new System.Drawing.Point(202, 161);
             this.txtEncontros.Name = "txtEncontros";
             this.txtEncontros.ReadOnly = true;
             this.txtEncontros.Size = new System.Drawing.Size(118, 20);
@@ -321,7 +405,7 @@
             // lblEncontros
             // 
             this.lblEncontros.AutoSize = true;
-            this.lblEncontros.Location = new System.Drawing.Point(199, 191);
+            this.lblEncontros.Location = new System.Drawing.Point(199, 145);
             this.lblEncontros.Name = "lblEncontros";
             this.lblEncontros.Size = new System.Drawing.Size(55, 13);
             this.lblEncontros.TabIndex = 1;
@@ -336,84 +420,9 @@
             this.pcbTarget.TabIndex = 0;
             this.pcbTarget.TabStop = false;
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.gbxSummary);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(622, 311);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Stats";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // gbxSummary
-            // 
-            this.gbxSummary.Controls.Add(this.txtAverageEncounter);
-            this.gbxSummary.Controls.Add(this.lblAverageEncounter);
-            this.gbxSummary.Controls.Add(this.txtTotalEncounter);
-            this.gbxSummary.Controls.Add(this.lblTotalEncounter);
-            this.gbxSummary.Controls.Add(this.txtTotalShiny);
-            this.gbxSummary.Controls.Add(this.lblTotalShiny);
-            this.gbxSummary.Location = new System.Drawing.Point(3, 3);
-            this.gbxSummary.Name = "gbxSummary";
-            this.gbxSummary.Size = new System.Drawing.Size(616, 73);
-            this.gbxSummary.TabIndex = 0;
-            this.gbxSummary.TabStop = false;
-            this.gbxSummary.Text = "Summary";
-            // 
-            // txtAverageEncounter
-            // 
-            this.txtAverageEncounter.Location = new System.Drawing.Point(227, 32);
-            this.txtAverageEncounter.Name = "txtAverageEncounter";
-            this.txtAverageEncounter.ReadOnly = true;
-            this.txtAverageEncounter.Size = new System.Drawing.Size(100, 20);
-            this.txtAverageEncounter.TabIndex = 5;
-            // 
-            // lblAverageEncounter
-            // 
-            this.lblAverageEncounter.AutoSize = true;
-            this.lblAverageEncounter.Location = new System.Drawing.Point(224, 16);
-            this.lblAverageEncounter.Name = "lblAverageEncounter";
-            this.lblAverageEncounter.Size = new System.Drawing.Size(107, 13);
-            this.lblAverageEncounter.TabIndex = 4;
-            this.lblAverageEncounter.Text = "Average Encounters:";
-            // 
-            // txtTotalEncounter
-            // 
-            this.txtTotalEncounter.Location = new System.Drawing.Point(118, 32);
-            this.txtTotalEncounter.Name = "txtTotalEncounter";
-            this.txtTotalEncounter.ReadOnly = true;
-            this.txtTotalEncounter.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalEncounter.TabIndex = 3;
-            // 
-            // lblTotalEncounter
-            // 
-            this.lblTotalEncounter.AutoSize = true;
-            this.lblTotalEncounter.Location = new System.Drawing.Point(115, 16);
-            this.lblTotalEncounter.Name = "lblTotalEncounter";
-            this.lblTotalEncounter.Size = new System.Drawing.Size(91, 13);
-            this.lblTotalEncounter.TabIndex = 2;
-            this.lblTotalEncounter.Text = "Total Encounters:";
-            // 
-            // txtTotalShiny
-            // 
-            this.txtTotalShiny.Location = new System.Drawing.Point(9, 32);
-            this.txtTotalShiny.Name = "txtTotalShiny";
-            this.txtTotalShiny.ReadOnly = true;
-            this.txtTotalShiny.Size = new System.Drawing.Size(100, 20);
-            this.txtTotalShiny.TabIndex = 1;
-            // 
-            // lblTotalShiny
-            // 
-            this.lblTotalShiny.AutoSize = true;
-            this.lblTotalShiny.Location = new System.Drawing.Point(6, 16);
-            this.lblTotalShiny.Name = "lblTotalShiny";
-            this.lblTotalShiny.Size = new System.Drawing.Size(71, 13);
-            this.lblTotalShiny.TabIndex = 0;
-            this.lblTotalShiny.Text = "Total Shinies:";
-            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.gbxCredits);
             this.tabPage2.Controls.Add(this.gbxTeclas);
             this.tabPage2.Controls.Add(this.gbxArquivos);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -433,7 +442,7 @@
             this.gbxTeclas.Controls.Add(this.lblAddKey);
             this.gbxTeclas.Location = new System.Drawing.Point(6, 81);
             this.gbxTeclas.Name = "gbxTeclas";
-            this.gbxTeclas.Size = new System.Drawing.Size(610, 137);
+            this.gbxTeclas.Size = new System.Drawing.Size(610, 74);
             this.gbxTeclas.TabIndex = 1;
             this.gbxTeclas.TabStop = false;
             this.gbxTeclas.Text = "HotKeys";
@@ -529,35 +538,100 @@
             // 
             this.fbdSavePath.RootFolder = System.Environment.SpecialFolder.MyComputer;
             // 
-            // lblMissTarget
+            // gbxCredits
             // 
-            this.lblMissTarget.AutoSize = true;
-            this.lblMissTarget.Location = new System.Drawing.Point(452, 191);
-            this.lblMissTarget.Name = "lblMissTarget";
-            this.lblMissTarget.Size = new System.Drawing.Size(65, 13);
-            this.lblMissTarget.TabIndex = 20;
-            this.lblMissTarget.Text = "Miss Target:";
+            this.gbxCredits.Controls.Add(this.llbGit);
+            this.gbxCredits.Controls.Add(this.lblGit);
+            this.gbxCredits.Controls.Add(this.llbTwich);
+            this.gbxCredits.Controls.Add(this.lblTwitch);
+            this.gbxCredits.Controls.Add(this.llbTwitter);
+            this.gbxCredits.Controls.Add(this.lblTwitter);
+            this.gbxCredits.Controls.Add(this.lblAutor);
+            this.gbxCredits.Controls.Add(this.lblCredits1);
+            this.gbxCredits.Location = new System.Drawing.Point(6, 161);
+            this.gbxCredits.Name = "gbxCredits";
+            this.gbxCredits.Size = new System.Drawing.Size(610, 144);
+            this.gbxCredits.TabIndex = 2;
+            this.gbxCredits.TabStop = false;
+            this.gbxCredits.Text = "Credits";
             // 
-            // cbxMissTarget
+            // lblCredits1
             // 
-            this.cbxMissTarget.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cbxMissTarget.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cbxMissTarget.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxMissTarget.FormattingEnabled = true;
-            this.cbxMissTarget.Location = new System.Drawing.Point(452, 206);
-            this.cbxMissTarget.Name = "cbxMissTarget";
-            this.cbxMissTarget.Size = new System.Drawing.Size(121, 21);
-            this.cbxMissTarget.TabIndex = 21;
+            this.lblCredits1.AutoSize = true;
+            this.lblCredits1.Location = new System.Drawing.Point(6, 16);
+            this.lblCredits1.Name = "lblCredits1";
+            this.lblCredits1.Size = new System.Drawing.Size(105, 13);
+            this.lblCredits1.TabIndex = 0;
+            this.lblCredits1.Text = "Shiny Hunter Helper:";
             // 
-            // btnPopUp
+            // lblAutor
             // 
-            this.btnPopUp.Location = new System.Drawing.Point(56, 204);
-            this.btnPopUp.Name = "btnPopUp";
-            this.btnPopUp.Size = new System.Drawing.Size(75, 23);
-            this.btnPopUp.TabIndex = 22;
-            this.btnPopUp.Text = "Pop Up Image";
-            this.btnPopUp.UseVisualStyleBackColor = true;
-            this.btnPopUp.Click += new System.EventHandler(this.btnPopUp_Click);
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Location = new System.Drawing.Point(16, 40);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(84, 13);
+            this.lblAutor.TabIndex = 1;
+            this.lblAutor.Text = "Autor: Luiz HMS";
+            // 
+            // lblTwitter
+            // 
+            this.lblTwitter.AutoSize = true;
+            this.lblTwitter.Location = new System.Drawing.Point(19, 62);
+            this.lblTwitter.Name = "lblTwitter";
+            this.lblTwitter.Size = new System.Drawing.Size(45, 13);
+            this.lblTwitter.TabIndex = 2;
+            this.lblTwitter.Text = "Twitter: ";
+            // 
+            // llbTwitter
+            // 
+            this.llbTwitter.AutoSize = true;
+            this.llbTwitter.Location = new System.Drawing.Point(61, 62);
+            this.llbTwitter.Name = "llbTwitter";
+            this.llbTwitter.Size = new System.Drawing.Size(73, 13);
+            this.llbTwitter.TabIndex = 3;
+            this.llbTwitter.TabStop = true;
+            this.llbTwitter.Text = "@LuizHMS22";
+            this.llbTwitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwitter_LinkClicked);
+            // 
+            // lblTwitch
+            // 
+            this.lblTwitch.AutoSize = true;
+            this.lblTwitch.Location = new System.Drawing.Point(19, 90);
+            this.lblTwitch.Name = "lblTwitch";
+            this.lblTwitch.Size = new System.Drawing.Size(42, 13);
+            this.lblTwitch.TabIndex = 4;
+            this.lblTwitch.Text = "Twitch:";
+            // 
+            // llbTwich
+            // 
+            this.llbTwich.AutoSize = true;
+            this.llbTwich.Location = new System.Drawing.Point(61, 90);
+            this.llbTwich.Name = "llbTwich";
+            this.llbTwich.Size = new System.Drawing.Size(50, 13);
+            this.llbTwich.TabIndex = 5;
+            this.llbTwich.TabStop = true;
+            this.llbTwich.Text = "LuizHMS";
+            this.llbTwich.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwich_LinkClicked);
+            // 
+            // lblGit
+            // 
+            this.lblGit.AutoSize = true;
+            this.lblGit.Location = new System.Drawing.Point(19, 118);
+            this.lblGit.Name = "lblGit";
+            this.lblGit.Size = new System.Drawing.Size(43, 13);
+            this.lblGit.TabIndex = 6;
+            this.lblGit.Text = "GitHub:";
+            // 
+            // llbGit
+            // 
+            this.llbGit.AutoSize = true;
+            this.llbGit.Location = new System.Drawing.Point(61, 118);
+            this.llbGit.Name = "llbGit";
+            this.llbGit.Size = new System.Drawing.Size(50, 13);
+            this.llbGit.TabIndex = 7;
+            this.llbGit.TabStop = true;
+            this.llbGit.Text = "LuizHMS";
+            this.llbGit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbGit_LinkClicked);
             // 
             // FrmMain
             // 
@@ -574,14 +648,13 @@
             this.gbxGen.ResumeLayout(false);
             this.gbxGen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTarget)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.gbxSummary.ResumeLayout(false);
-            this.gbxSummary.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.gbxTeclas.ResumeLayout(false);
             this.gbxTeclas.PerformLayout();
             this.gbxArquivos.ResumeLayout(false);
             this.gbxArquivos.PerformLayout();
+            this.gbxCredits.ResumeLayout(false);
+            this.gbxCredits.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -597,7 +670,6 @@
         private System.Windows.Forms.Label lblDestino;
         private System.Windows.Forms.FolderBrowserDialog fbdSavePath;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.PictureBox pcbTarget;
         private System.Windows.Forms.Label lblEncontros;
         private System.Windows.Forms.GroupBox gbxTeclas;
@@ -624,16 +696,23 @@
         private System.Windows.Forms.Label lblGameVersion;
         private System.Windows.Forms.TextBox txtUnluck;
         private System.Windows.Forms.Label lblUnluck;
-        private System.Windows.Forms.GroupBox gbxSummary;
-        private System.Windows.Forms.Label lblTotalShiny;
-        private System.Windows.Forms.Label lblAverageEncounter;
-        private System.Windows.Forms.TextBox txtTotalEncounter;
-        private System.Windows.Forms.Label lblTotalEncounter;
-        private System.Windows.Forms.TextBox txtTotalShiny;
-        private System.Windows.Forms.TextBox txtAverageEncounter;
         private System.Windows.Forms.ComboBox cbxMissTarget;
         private System.Windows.Forms.Label lblMissTarget;
         private System.Windows.Forms.Button btnPopUp;
+        private System.Windows.Forms.Button btnNewRE;
+        private System.Windows.Forms.TextBox txtSessionRE;
+        private System.Windows.Forms.Label lblSessionRE;
+        private System.Windows.Forms.Label lblNewRE;
+        private System.Windows.Forms.TextBox txtNewRE;
+        private System.Windows.Forms.GroupBox gbxCredits;
+        private System.Windows.Forms.LinkLabel llbTwitter;
+        private System.Windows.Forms.Label lblTwitter;
+        private System.Windows.Forms.Label lblAutor;
+        private System.Windows.Forms.Label lblCredits1;
+        private System.Windows.Forms.LinkLabel llbTwich;
+        private System.Windows.Forms.Label lblTwitch;
+        private System.Windows.Forms.LinkLabel llbGit;
+        private System.Windows.Forms.Label lblGit;
     }
 }
 
