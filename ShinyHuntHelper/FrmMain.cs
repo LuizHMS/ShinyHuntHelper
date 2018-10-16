@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +18,8 @@ namespace ShinyHuntHelper
         KeyboardHook hook = new KeyboardHook();
         private Keys TempAddKey = new Keys();
         private Keys TempSubKey = new Keys();
-        private string imagePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+        private string imagePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Imgs");
+        //private string imagePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
         private int RadioValue = 5;
 
         private string FileNamePokemonList = "PokemonList.csv";
@@ -926,6 +928,7 @@ namespace ShinyHuntHelper
 
         private void cbxTarget_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             if (cbxTarget.SelectedIndex > 0)
             {
                 if (SavePath != "")
@@ -942,15 +945,16 @@ namespace ShinyHuntHelper
                 {
                     case 2:
                     case 3:
-                        pcbTarget.ImageLocation = imagePath + "\\Imgs\\gen" + RadioValue + "\\" + cbxTarget.SelectedIndex + ".gif"; break;
+                        pcbTarget.ImageLocation = imagePath + "\\gen" + RadioValue + "\\" + cbxTarget.SelectedIndex + ".gif"; break;
                     case 4:
-                        pcbTarget.ImageLocation = imagePath + "\\Imgs\\gen" + RadioValue + "\\" + cbxTarget.SelectedIndex + ".png"; break;
+                        pcbTarget.ImageLocation = imagePath + "\\gen" + RadioValue + "\\" + cbxTarget.SelectedIndex + ".png"; break;
                     case 5:
-                        pcbTarget.ImageLocation = imagePath + "\\Imgs\\gen" + RadioValue + "\\" + String.Format("{0:000}",cbxTarget.SelectedIndex) + ".gif"; break;
+                        pcbTarget.ImageLocation = imagePath + "\\gen" + RadioValue + "\\" + String.Format("{0:000}",cbxTarget.SelectedIndex) + ".gif"; break;
                 }
                     
             }
-            
+          
+
         }
 
         #region RadioButtons

@@ -12,6 +12,25 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\users\luiz henrique\release\ShinyHuntHelper\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://twitter.com/LuizHMS22</SupportUrl>
+    <ProductName>Shiny Hunt Helper</ProductName>
+    <PublisherName>Luiz HMS</PublisherName>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +50,34 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5AB2B78C9A535A47BF20EE28B21EB36F287D2F96</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ShinyHuntHelper_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ShinyHuntHelper.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ShinyHuntHelper_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -75,6 +122,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -84,13 +132,30 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="ShinyHuntHelper_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Imgs\gen3\1.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -3791,669 +3856,1995 @@
     <Content Include="Imgs\gen2\99.gif">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Imgs\gen5\001.gif" />
-    <Content Include="Imgs\gen5\002.gif" />
-    <Content Include="Imgs\gen5\003.gif" />
-    <Content Include="Imgs\gen5\004.gif" />
-    <Content Include="Imgs\gen5\005.gif" />
-    <Content Include="Imgs\gen5\006.gif" />
-    <Content Include="Imgs\gen5\007.gif" />
-    <Content Include="Imgs\gen5\008.gif" />
-    <Content Include="Imgs\gen5\009.gif" />
-    <Content Include="Imgs\gen5\010.gif" />
-    <Content Include="Imgs\gen5\011.gif" />
-    <Content Include="Imgs\gen5\012.gif" />
-    <Content Include="Imgs\gen5\013.gif" />
-    <Content Include="Imgs\gen5\014.gif" />
-    <Content Include="Imgs\gen5\015.gif" />
-    <Content Include="Imgs\gen5\016.gif" />
-    <Content Include="Imgs\gen5\017.gif" />
-    <Content Include="Imgs\gen5\018.gif" />
-    <Content Include="Imgs\gen5\019.gif" />
-    <Content Include="Imgs\gen5\020.gif" />
-    <Content Include="Imgs\gen5\021.gif" />
-    <Content Include="Imgs\gen5\022.gif" />
-    <Content Include="Imgs\gen5\023.gif" />
-    <Content Include="Imgs\gen5\024.gif" />
-    <Content Include="Imgs\gen5\025.gif" />
-    <Content Include="Imgs\gen5\026.gif" />
-    <Content Include="Imgs\gen5\027.gif" />
-    <Content Include="Imgs\gen5\028.gif" />
-    <Content Include="Imgs\gen5\029.gif" />
-    <Content Include="Imgs\gen5\030.gif" />
-    <Content Include="Imgs\gen5\031.gif" />
-    <Content Include="Imgs\gen5\032.gif" />
-    <Content Include="Imgs\gen5\033.gif" />
-    <Content Include="Imgs\gen5\034.gif" />
-    <Content Include="Imgs\gen5\035.gif" />
-    <Content Include="Imgs\gen5\036.gif" />
-    <Content Include="Imgs\gen5\037.gif" />
-    <Content Include="Imgs\gen5\038.gif" />
-    <Content Include="Imgs\gen5\039.gif" />
-    <Content Include="Imgs\gen5\040.gif" />
-    <Content Include="Imgs\gen5\041.gif" />
-    <Content Include="Imgs\gen5\042.gif" />
-    <Content Include="Imgs\gen5\043.gif" />
-    <Content Include="Imgs\gen5\044.gif" />
-    <Content Include="Imgs\gen5\045.gif" />
-    <Content Include="Imgs\gen5\046.gif" />
-    <Content Include="Imgs\gen5\047.gif" />
-    <Content Include="Imgs\gen5\048.gif" />
-    <Content Include="Imgs\gen5\049.gif" />
-    <Content Include="Imgs\gen5\050.gif" />
-    <Content Include="Imgs\gen5\051.gif" />
-    <Content Include="Imgs\gen5\052.gif" />
-    <Content Include="Imgs\gen5\053.gif" />
-    <Content Include="Imgs\gen5\054.gif" />
-    <Content Include="Imgs\gen5\055.gif" />
-    <Content Include="Imgs\gen5\056.gif" />
-    <Content Include="Imgs\gen5\057.gif" />
-    <Content Include="Imgs\gen5\058.gif" />
-    <Content Include="Imgs\gen5\059.gif" />
-    <Content Include="Imgs\gen5\060.gif" />
-    <Content Include="Imgs\gen5\061.gif" />
-    <Content Include="Imgs\gen5\062.gif" />
-    <Content Include="Imgs\gen5\063.gif" />
-    <Content Include="Imgs\gen5\064.gif" />
-    <Content Include="Imgs\gen5\065.gif" />
-    <Content Include="Imgs\gen5\066.gif" />
-    <Content Include="Imgs\gen5\067.gif" />
-    <Content Include="Imgs\gen5\068.gif" />
-    <Content Include="Imgs\gen5\069.gif" />
-    <Content Include="Imgs\gen5\070.gif" />
-    <Content Include="Imgs\gen5\071.gif" />
-    <Content Include="Imgs\gen5\072.gif" />
-    <Content Include="Imgs\gen5\073.gif" />
-    <Content Include="Imgs\gen5\074.gif" />
-    <Content Include="Imgs\gen5\075.gif" />
-    <Content Include="Imgs\gen5\076.gif" />
-    <Content Include="Imgs\gen5\077.gif" />
-    <Content Include="Imgs\gen5\078.gif" />
-    <Content Include="Imgs\gen5\079.gif" />
-    <Content Include="Imgs\gen5\080.gif" />
-    <Content Include="Imgs\gen5\081.gif" />
-    <Content Include="Imgs\gen5\082.gif" />
-    <Content Include="Imgs\gen5\083.gif" />
-    <Content Include="Imgs\gen5\084.gif" />
-    <Content Include="Imgs\gen5\085.gif" />
-    <Content Include="Imgs\gen5\086.gif" />
-    <Content Include="Imgs\gen5\087.gif" />
-    <Content Include="Imgs\gen5\088.gif" />
-    <Content Include="Imgs\gen5\089.gif" />
-    <Content Include="Imgs\gen5\090.gif" />
-    <Content Include="Imgs\gen5\091.gif" />
-    <Content Include="Imgs\gen5\092.gif" />
-    <Content Include="Imgs\gen5\093.gif" />
-    <Content Include="Imgs\gen5\094.gif" />
-    <Content Include="Imgs\gen5\095.gif" />
-    <Content Include="Imgs\gen5\096.gif" />
-    <Content Include="Imgs\gen5\097.gif" />
-    <Content Include="Imgs\gen5\098.gif" />
-    <Content Include="Imgs\gen5\099.gif" />
-    <Content Include="Imgs\gen5\100.gif" />
-    <Content Include="Imgs\gen5\101.gif" />
-    <Content Include="Imgs\gen5\102.gif" />
-    <Content Include="Imgs\gen5\103.gif" />
-    <Content Include="Imgs\gen5\104.gif" />
-    <Content Include="Imgs\gen5\105.gif" />
-    <Content Include="Imgs\gen5\106.gif" />
-    <Content Include="Imgs\gen5\107.gif" />
-    <Content Include="Imgs\gen5\108.gif" />
-    <Content Include="Imgs\gen5\109.gif" />
-    <Content Include="Imgs\gen5\110.gif" />
-    <Content Include="Imgs\gen5\111.gif" />
-    <Content Include="Imgs\gen5\112.gif" />
-    <Content Include="Imgs\gen5\113.gif" />
-    <Content Include="Imgs\gen5\114.gif" />
-    <Content Include="Imgs\gen5\115.gif" />
-    <Content Include="Imgs\gen5\116.gif" />
-    <Content Include="Imgs\gen5\117.gif" />
-    <Content Include="Imgs\gen5\118.gif" />
-    <Content Include="Imgs\gen5\119.gif" />
-    <Content Include="Imgs\gen5\120.gif" />
-    <Content Include="Imgs\gen5\121.gif" />
-    <Content Include="Imgs\gen5\122.gif" />
-    <Content Include="Imgs\gen5\123.gif" />
-    <Content Include="Imgs\gen5\124.gif" />
-    <Content Include="Imgs\gen5\125.gif" />
-    <Content Include="Imgs\gen5\126.gif" />
-    <Content Include="Imgs\gen5\127.gif" />
-    <Content Include="Imgs\gen5\128.gif" />
-    <Content Include="Imgs\gen5\129.gif" />
-    <Content Include="Imgs\gen5\130.gif" />
-    <Content Include="Imgs\gen5\131.gif" />
-    <Content Include="Imgs\gen5\132.gif" />
-    <Content Include="Imgs\gen5\133.gif" />
-    <Content Include="Imgs\gen5\134.gif" />
-    <Content Include="Imgs\gen5\135.gif" />
-    <Content Include="Imgs\gen5\136.gif" />
-    <Content Include="Imgs\gen5\137.gif" />
-    <Content Include="Imgs\gen5\138.gif" />
-    <Content Include="Imgs\gen5\139.gif" />
-    <Content Include="Imgs\gen5\140.gif" />
-    <Content Include="Imgs\gen5\141.gif" />
-    <Content Include="Imgs\gen5\142.gif" />
-    <Content Include="Imgs\gen5\143.gif" />
-    <Content Include="Imgs\gen5\144.gif" />
-    <Content Include="Imgs\gen5\145.gif" />
-    <Content Include="Imgs\gen5\146.gif" />
-    <Content Include="Imgs\gen5\147.gif" />
-    <Content Include="Imgs\gen5\148.gif" />
-    <Content Include="Imgs\gen5\149.gif" />
-    <Content Include="Imgs\gen5\150.gif" />
-    <Content Include="Imgs\gen5\151.gif" />
-    <Content Include="Imgs\gen5\152.gif" />
-    <Content Include="Imgs\gen5\153.gif" />
-    <Content Include="Imgs\gen5\154.gif" />
-    <Content Include="Imgs\gen5\155.gif" />
-    <Content Include="Imgs\gen5\156.gif" />
-    <Content Include="Imgs\gen5\157.gif" />
-    <Content Include="Imgs\gen5\158.gif" />
-    <Content Include="Imgs\gen5\159.gif" />
-    <Content Include="Imgs\gen5\160.gif" />
-    <Content Include="Imgs\gen5\161.gif" />
-    <Content Include="Imgs\gen5\162.gif" />
-    <Content Include="Imgs\gen5\163.gif" />
-    <Content Include="Imgs\gen5\164.gif" />
-    <Content Include="Imgs\gen5\165.gif" />
-    <Content Include="Imgs\gen5\166.gif" />
-    <Content Include="Imgs\gen5\167.gif" />
-    <Content Include="Imgs\gen5\168.gif" />
-    <Content Include="Imgs\gen5\169.gif" />
-    <Content Include="Imgs\gen5\170.gif" />
-    <Content Include="Imgs\gen5\171.gif" />
-    <Content Include="Imgs\gen5\172.gif" />
-    <Content Include="Imgs\gen5\173.gif" />
-    <Content Include="Imgs\gen5\174.gif" />
-    <Content Include="Imgs\gen5\175.gif" />
-    <Content Include="Imgs\gen5\176.gif" />
-    <Content Include="Imgs\gen5\177.gif" />
-    <Content Include="Imgs\gen5\178.gif" />
-    <Content Include="Imgs\gen5\179.gif" />
-    <Content Include="Imgs\gen5\180.gif" />
-    <Content Include="Imgs\gen5\181.gif" />
-    <Content Include="Imgs\gen5\182.gif" />
-    <Content Include="Imgs\gen5\183.gif" />
-    <Content Include="Imgs\gen5\184.gif" />
-    <Content Include="Imgs\gen5\185.gif" />
-    <Content Include="Imgs\gen5\186.gif" />
-    <Content Include="Imgs\gen5\187.gif" />
-    <Content Include="Imgs\gen5\188.gif" />
-    <Content Include="Imgs\gen5\189.gif" />
-    <Content Include="Imgs\gen5\190.gif" />
-    <Content Include="Imgs\gen5\191.gif" />
-    <Content Include="Imgs\gen5\192.gif" />
-    <Content Include="Imgs\gen5\193.gif" />
-    <Content Include="Imgs\gen5\194.gif" />
-    <Content Include="Imgs\gen5\195.gif" />
-    <Content Include="Imgs\gen5\196.gif" />
-    <Content Include="Imgs\gen5\197.gif" />
-    <Content Include="Imgs\gen5\198.gif" />
-    <Content Include="Imgs\gen5\199.gif" />
-    <Content Include="Imgs\gen5\200.gif" />
-    <Content Include="Imgs\gen5\201-b.gif" />
-    <Content Include="Imgs\gen5\202.gif" />
-    <Content Include="Imgs\gen5\203.gif" />
-    <Content Include="Imgs\gen5\204.gif" />
-    <Content Include="Imgs\gen5\205.gif" />
-    <Content Include="Imgs\gen5\206.gif" />
-    <Content Include="Imgs\gen5\207.gif" />
-    <Content Include="Imgs\gen5\208.gif" />
-    <Content Include="Imgs\gen5\209.gif" />
-    <Content Include="Imgs\gen5\210.gif" />
-    <Content Include="Imgs\gen5\211.gif" />
-    <Content Include="Imgs\gen5\212.gif" />
-    <Content Include="Imgs\gen5\213.gif" />
-    <Content Include="Imgs\gen5\214.gif" />
-    <Content Include="Imgs\gen5\215.gif" />
-    <Content Include="Imgs\gen5\216.gif" />
-    <Content Include="Imgs\gen5\217.gif" />
-    <Content Include="Imgs\gen5\218.gif" />
-    <Content Include="Imgs\gen5\219.gif" />
-    <Content Include="Imgs\gen5\220.gif" />
-    <Content Include="Imgs\gen5\221.gif" />
-    <Content Include="Imgs\gen5\222.gif" />
-    <Content Include="Imgs\gen5\223.gif" />
-    <Content Include="Imgs\gen5\224.gif" />
-    <Content Include="Imgs\gen5\225.gif" />
-    <Content Include="Imgs\gen5\226.gif" />
-    <Content Include="Imgs\gen5\227.gif" />
-    <Content Include="Imgs\gen5\228.gif" />
-    <Content Include="Imgs\gen5\229.gif" />
-    <Content Include="Imgs\gen5\230.gif" />
-    <Content Include="Imgs\gen5\231.gif" />
-    <Content Include="Imgs\gen5\232.gif" />
-    <Content Include="Imgs\gen5\233.gif" />
-    <Content Include="Imgs\gen5\234.gif" />
-    <Content Include="Imgs\gen5\235.gif" />
-    <Content Include="Imgs\gen5\236.gif" />
-    <Content Include="Imgs\gen5\237.gif" />
-    <Content Include="Imgs\gen5\238.gif" />
-    <Content Include="Imgs\gen5\239.gif" />
-    <Content Include="Imgs\gen5\240.gif" />
-    <Content Include="Imgs\gen5\241.gif" />
-    <Content Include="Imgs\gen5\242.gif" />
-    <Content Include="Imgs\gen5\243.gif" />
-    <Content Include="Imgs\gen5\244.gif" />
-    <Content Include="Imgs\gen5\245.gif" />
-    <Content Include="Imgs\gen5\246.gif" />
-    <Content Include="Imgs\gen5\247.gif" />
-    <Content Include="Imgs\gen5\248.gif" />
-    <Content Include="Imgs\gen5\249.gif" />
-    <Content Include="Imgs\gen5\250.gif" />
-    <Content Include="Imgs\gen5\252.gif" />
-    <Content Include="Imgs\gen5\253.gif" />
-    <Content Include="Imgs\gen5\254.gif" />
-    <Content Include="Imgs\gen5\255.gif" />
-    <Content Include="Imgs\gen5\256.gif" />
-    <Content Include="Imgs\gen5\257.gif" />
-    <Content Include="Imgs\gen5\258.gif" />
-    <Content Include="Imgs\gen5\259.gif" />
-    <Content Include="Imgs\gen5\260.gif" />
-    <Content Include="Imgs\gen5\261.gif" />
-    <Content Include="Imgs\gen5\262.gif" />
-    <Content Include="Imgs\gen5\263.gif" />
-    <Content Include="Imgs\gen5\264.gif" />
-    <Content Include="Imgs\gen5\265.gif" />
-    <Content Include="Imgs\gen5\266.gif" />
-    <Content Include="Imgs\gen5\267.gif" />
-    <Content Include="Imgs\gen5\268.gif" />
-    <Content Include="Imgs\gen5\269.gif" />
-    <Content Include="Imgs\gen5\270.gif" />
-    <Content Include="Imgs\gen5\271.gif" />
-    <Content Include="Imgs\gen5\272.gif" />
-    <Content Include="Imgs\gen5\273.gif" />
-    <Content Include="Imgs\gen5\274.gif" />
-    <Content Include="Imgs\gen5\275.gif" />
-    <Content Include="Imgs\gen5\276.gif" />
-    <Content Include="Imgs\gen5\277.gif" />
-    <Content Include="Imgs\gen5\278.gif" />
-    <Content Include="Imgs\gen5\279.gif" />
-    <Content Include="Imgs\gen5\280.gif" />
-    <Content Include="Imgs\gen5\281.gif" />
-    <Content Include="Imgs\gen5\282.gif" />
-    <Content Include="Imgs\gen5\283.gif" />
-    <Content Include="Imgs\gen5\284.gif" />
-    <Content Include="Imgs\gen5\285.gif" />
-    <Content Include="Imgs\gen5\286.gif" />
-    <Content Include="Imgs\gen5\287.gif" />
-    <Content Include="Imgs\gen5\288.gif" />
-    <Content Include="Imgs\gen5\289.gif" />
-    <Content Include="Imgs\gen5\290.gif" />
-    <Content Include="Imgs\gen5\291.gif" />
-    <Content Include="Imgs\gen5\292.gif" />
-    <Content Include="Imgs\gen5\293.gif" />
-    <Content Include="Imgs\gen5\294.gif" />
-    <Content Include="Imgs\gen5\295.gif" />
-    <Content Include="Imgs\gen5\296.gif" />
-    <Content Include="Imgs\gen5\297.gif" />
-    <Content Include="Imgs\gen5\298.gif" />
-    <Content Include="Imgs\gen5\299.gif" />
-    <Content Include="Imgs\gen5\300.gif" />
-    <Content Include="Imgs\gen5\301.gif" />
-    <Content Include="Imgs\gen5\302.gif" />
-    <Content Include="Imgs\gen5\303.gif" />
-    <Content Include="Imgs\gen5\304.gif" />
-    <Content Include="Imgs\gen5\305.gif" />
-    <Content Include="Imgs\gen5\306.gif" />
-    <Content Include="Imgs\gen5\307.gif" />
-    <Content Include="Imgs\gen5\308.gif" />
-    <Content Include="Imgs\gen5\309.gif" />
-    <Content Include="Imgs\gen5\310.gif" />
-    <Content Include="Imgs\gen5\311.gif" />
-    <Content Include="Imgs\gen5\312.gif" />
-    <Content Include="Imgs\gen5\313.gif" />
-    <Content Include="Imgs\gen5\314.gif" />
-    <Content Include="Imgs\gen5\315.gif" />
-    <Content Include="Imgs\gen5\316.gif" />
-    <Content Include="Imgs\gen5\317.gif" />
-    <Content Include="Imgs\gen5\318.gif" />
-    <Content Include="Imgs\gen5\319.gif" />
-    <Content Include="Imgs\gen5\320.gif" />
-    <Content Include="Imgs\gen5\321.gif" />
-    <Content Include="Imgs\gen5\322.gif" />
-    <Content Include="Imgs\gen5\323.gif" />
-    <Content Include="Imgs\gen5\324.gif" />
-    <Content Include="Imgs\gen5\325.gif" />
-    <Content Include="Imgs\gen5\326.gif" />
-    <Content Include="Imgs\gen5\327.gif" />
-    <Content Include="Imgs\gen5\328.gif" />
-    <Content Include="Imgs\gen5\329.gif" />
-    <Content Include="Imgs\gen5\330.gif" />
-    <Content Include="Imgs\gen5\331.gif" />
-    <Content Include="Imgs\gen5\332.gif" />
-    <Content Include="Imgs\gen5\333.gif" />
-    <Content Include="Imgs\gen5\334.gif" />
-    <Content Include="Imgs\gen5\335.gif" />
-    <Content Include="Imgs\gen5\336.gif" />
-    <Content Include="Imgs\gen5\337.gif" />
-    <Content Include="Imgs\gen5\338.gif" />
-    <Content Include="Imgs\gen5\339.gif" />
-    <Content Include="Imgs\gen5\340.gif" />
-    <Content Include="Imgs\gen5\341.gif" />
-    <Content Include="Imgs\gen5\342.gif" />
-    <Content Include="Imgs\gen5\343.gif" />
-    <Content Include="Imgs\gen5\344.gif" />
-    <Content Include="Imgs\gen5\345.gif" />
-    <Content Include="Imgs\gen5\346.gif" />
-    <Content Include="Imgs\gen5\347.gif" />
-    <Content Include="Imgs\gen5\348.gif" />
-    <Content Include="Imgs\gen5\349.gif" />
-    <Content Include="Imgs\gen5\350.gif" />
-    <Content Include="Imgs\gen5\351.gif" />
-    <Content Include="Imgs\gen5\352.gif" />
-    <Content Include="Imgs\gen5\353.gif" />
-    <Content Include="Imgs\gen5\354.gif" />
-    <Content Include="Imgs\gen5\355.gif" />
-    <Content Include="Imgs\gen5\356.gif" />
-    <Content Include="Imgs\gen5\357.gif" />
-    <Content Include="Imgs\gen5\358.gif" />
-    <Content Include="Imgs\gen5\359.gif" />
-    <Content Include="Imgs\gen5\360.gif" />
-    <Content Include="Imgs\gen5\361.gif" />
-    <Content Include="Imgs\gen5\362.gif" />
-    <Content Include="Imgs\gen5\363.gif" />
-    <Content Include="Imgs\gen5\364.gif" />
-    <Content Include="Imgs\gen5\365.gif" />
-    <Content Include="Imgs\gen5\366.gif" />
-    <Content Include="Imgs\gen5\367.gif" />
-    <Content Include="Imgs\gen5\368.gif" />
-    <Content Include="Imgs\gen5\369.gif" />
-    <Content Include="Imgs\gen5\370.gif" />
-    <Content Include="Imgs\gen5\371.gif" />
-    <Content Include="Imgs\gen5\372.gif" />
-    <Content Include="Imgs\gen5\373.gif" />
-    <Content Include="Imgs\gen5\374.gif" />
-    <Content Include="Imgs\gen5\375.gif" />
-    <Content Include="Imgs\gen5\377.gif" />
-    <Content Include="Imgs\gen5\378.gif" />
-    <Content Include="Imgs\gen5\379.gif" />
-    <Content Include="Imgs\gen5\380.gif" />
-    <Content Include="Imgs\gen5\381.gif" />
-    <Content Include="Imgs\gen5\382.gif" />
-    <Content Include="Imgs\gen5\383.gif" />
-    <Content Include="Imgs\gen5\384.gif" />
-    <Content Include="Imgs\gen5\385.gif" />
-    <Content Include="Imgs\gen5\386.gif" />
-    <Content Include="Imgs\gen5\387.gif" />
-    <Content Include="Imgs\gen5\388.gif" />
-    <Content Include="Imgs\gen5\389.gif" />
-    <Content Include="Imgs\gen5\390.gif" />
-    <Content Include="Imgs\gen5\391.gif" />
-    <Content Include="Imgs\gen5\392.gif" />
-    <Content Include="Imgs\gen5\393.gif" />
-    <Content Include="Imgs\gen5\394.gif" />
-    <Content Include="Imgs\gen5\395.gif" />
-    <Content Include="Imgs\gen5\396.gif" />
-    <Content Include="Imgs\gen5\397.gif" />
-    <Content Include="Imgs\gen5\398.gif" />
-    <Content Include="Imgs\gen5\399.gif" />
-    <Content Include="Imgs\gen5\400.gif" />
-    <Content Include="Imgs\gen5\401.gif" />
-    <Content Include="Imgs\gen5\402.gif" />
-    <Content Include="Imgs\gen5\403.gif" />
-    <Content Include="Imgs\gen5\404.gif" />
-    <Content Include="Imgs\gen5\405.gif" />
-    <Content Include="Imgs\gen5\406.gif" />
-    <Content Include="Imgs\gen5\407.gif" />
-    <Content Include="Imgs\gen5\408.gif" />
-    <Content Include="Imgs\gen5\409.gif" />
-    <Content Include="Imgs\gen5\410.gif" />
-    <Content Include="Imgs\gen5\411.gif" />
-    <Content Include="Imgs\gen5\412.gif" />
-    <Content Include="Imgs\gen5\413.gif" />
-    <Content Include="Imgs\gen5\414.gif" />
-    <Content Include="Imgs\gen5\415.gif" />
-    <Content Include="Imgs\gen5\416.gif" />
-    <Content Include="Imgs\gen5\417.gif" />
-    <Content Include="Imgs\gen5\418.gif" />
-    <Content Include="Imgs\gen5\419.gif" />
-    <Content Include="Imgs\gen5\420.gif" />
-    <Content Include="Imgs\gen5\421-sunshine.gif" />
-    <Content Include="Imgs\gen5\421.gif" />
-    <Content Include="Imgs\gen5\422-east.gif" />
-    <Content Include="Imgs\gen5\422.gif" />
-    <Content Include="Imgs\gen5\423-east.gif" />
-    <Content Include="Imgs\gen5\423.gif" />
-    <Content Include="Imgs\gen5\424.gif" />
-    <Content Include="Imgs\gen5\425.gif" />
-    <Content Include="Imgs\gen5\426.gif" />
-    <Content Include="Imgs\gen5\427.gif" />
-    <Content Include="Imgs\gen5\428.gif" />
-    <Content Include="Imgs\gen5\429.gif" />
-    <Content Include="Imgs\gen5\430.gif" />
-    <Content Include="Imgs\gen5\431.gif" />
-    <Content Include="Imgs\gen5\432.gif" />
-    <Content Include="Imgs\gen5\433.gif" />
-    <Content Include="Imgs\gen5\434.gif" />
-    <Content Include="Imgs\gen5\435.gif" />
-    <Content Include="Imgs\gen5\436.gif" />
-    <Content Include="Imgs\gen5\437.gif" />
-    <Content Include="Imgs\gen5\438.gif" />
-    <Content Include="Imgs\gen5\439.gif" />
-    <Content Include="Imgs\gen5\440.gif" />
-    <Content Include="Imgs\gen5\441.gif" />
-    <Content Include="Imgs\gen5\442.gif" />
-    <Content Include="Imgs\gen5\443.gif" />
-    <Content Include="Imgs\gen5\444.gif" />
-    <Content Include="Imgs\gen5\445.gif" />
-    <Content Include="Imgs\gen5\446.gif" />
-    <Content Include="Imgs\gen5\447.gif" />
-    <Content Include="Imgs\gen5\448.gif" />
-    <Content Include="Imgs\gen5\449.gif" />
-    <Content Include="Imgs\gen5\450.gif" />
-    <Content Include="Imgs\gen5\451.gif" />
-    <Content Include="Imgs\gen5\452.gif" />
-    <Content Include="Imgs\gen5\453.gif" />
-    <Content Include="Imgs\gen5\454.gif" />
-    <Content Include="Imgs\gen5\455.gif" />
-    <Content Include="Imgs\gen5\456.gif" />
-    <Content Include="Imgs\gen5\457.gif" />
-    <Content Include="Imgs\gen5\458.gif" />
-    <Content Include="Imgs\gen5\459.gif" />
-    <Content Include="Imgs\gen5\460.gif" />
-    <Content Include="Imgs\gen5\461.gif" />
-    <Content Include="Imgs\gen5\462.gif" />
-    <Content Include="Imgs\gen5\463.gif" />
-    <Content Include="Imgs\gen5\464.gif" />
-    <Content Include="Imgs\gen5\465.gif" />
-    <Content Include="Imgs\gen5\466.gif" />
-    <Content Include="Imgs\gen5\467.gif" />
-    <Content Include="Imgs\gen5\468.gif" />
-    <Content Include="Imgs\gen5\469.gif" />
-    <Content Include="Imgs\gen5\470.gif" />
-    <Content Include="Imgs\gen5\471.gif" />
-    <Content Include="Imgs\gen5\472.gif" />
-    <Content Include="Imgs\gen5\473.gif" />
-    <Content Include="Imgs\gen5\474.gif" />
-    <Content Include="Imgs\gen5\475.gif" />
-    <Content Include="Imgs\gen5\476.gif" />
-    <Content Include="Imgs\gen5\477.gif" />
-    <Content Include="Imgs\gen5\478.gif" />
-    <Content Include="Imgs\gen5\479.gif" />
-    <Content Include="Imgs\gen5\480.gif" />
-    <Content Include="Imgs\gen5\481.gif" />
-    <Content Include="Imgs\gen5\482.gif" />
-    <Content Include="Imgs\gen5\483.gif" />
-    <Content Include="Imgs\gen5\484.gif" />
-    <Content Include="Imgs\gen5\485.gif" />
-    <Content Include="Imgs\gen5\486.gif" />
-    <Content Include="Imgs\gen5\487.gif" />
-    <Content Include="Imgs\gen5\488.gif" />
-    <Content Include="Imgs\gen5\489.gif" />
-    <Content Include="Imgs\gen5\490.gif" />
-    <Content Include="Imgs\gen5\491.gif" />
-    <Content Include="Imgs\gen5\492.gif" />
-    <Content Include="Imgs\gen5\493.gif" />
-    <Content Include="Imgs\gen5\494.gif" />
-    <Content Include="Imgs\gen5\495.gif" />
-    <Content Include="Imgs\gen5\496.gif" />
-    <Content Include="Imgs\gen5\497.gif" />
-    <Content Include="Imgs\gen5\498.gif" />
-    <Content Include="Imgs\gen5\499.gif" />
-    <Content Include="Imgs\gen5\500.gif" />
-    <Content Include="Imgs\gen5\501.gif" />
-    <Content Include="Imgs\gen5\502.gif" />
-    <Content Include="Imgs\gen5\503.gif" />
-    <Content Include="Imgs\gen5\504.gif" />
-    <Content Include="Imgs\gen5\505.gif" />
-    <Content Include="Imgs\gen5\506.gif" />
-    <Content Include="Imgs\gen5\507.gif" />
-    <Content Include="Imgs\gen5\508.gif" />
-    <Content Include="Imgs\gen5\509.gif" />
-    <Content Include="Imgs\gen5\510.gif" />
-    <Content Include="Imgs\gen5\511.gif" />
-    <Content Include="Imgs\gen5\512.gif" />
-    <Content Include="Imgs\gen5\513.gif" />
-    <Content Include="Imgs\gen5\514.gif" />
-    <Content Include="Imgs\gen5\515.gif" />
-    <Content Include="Imgs\gen5\516.gif" />
-    <Content Include="Imgs\gen5\517.gif" />
-    <Content Include="Imgs\gen5\518.gif" />
-    <Content Include="Imgs\gen5\519.gif" />
-    <Content Include="Imgs\gen5\520.gif" />
-    <Content Include="Imgs\gen5\521.gif" />
-    <Content Include="Imgs\gen5\521f.gif" />
-    <Content Include="Imgs\gen5\522.gif" />
-    <Content Include="Imgs\gen5\523.gif" />
-    <Content Include="Imgs\gen5\524.gif" />
-    <Content Include="Imgs\gen5\525.gif" />
-    <Content Include="Imgs\gen5\526.gif" />
-    <Content Include="Imgs\gen5\527.gif" />
-    <Content Include="Imgs\gen5\528.gif" />
-    <Content Include="Imgs\gen5\529.gif" />
-    <Content Include="Imgs\gen5\530.gif" />
-    <Content Include="Imgs\gen5\531.gif" />
-    <Content Include="Imgs\gen5\532.gif" />
-    <Content Include="Imgs\gen5\533.gif" />
-    <Content Include="Imgs\gen5\534.gif" />
-    <Content Include="Imgs\gen5\535.gif" />
-    <Content Include="Imgs\gen5\536.gif" />
-    <Content Include="Imgs\gen5\537.gif" />
-    <Content Include="Imgs\gen5\538.gif" />
-    <Content Include="Imgs\gen5\539.gif" />
-    <Content Include="Imgs\gen5\540.gif" />
-    <Content Include="Imgs\gen5\541.gif" />
-    <Content Include="Imgs\gen5\542.gif" />
-    <Content Include="Imgs\gen5\543.gif" />
-    <Content Include="Imgs\gen5\544.gif" />
-    <Content Include="Imgs\gen5\545.gif" />
-    <Content Include="Imgs\gen5\546.gif" />
-    <Content Include="Imgs\gen5\547.gif" />
-    <Content Include="Imgs\gen5\548.gif" />
-    <Content Include="Imgs\gen5\549.gif" />
-    <Content Include="Imgs\gen5\550-blue.gif" />
-    <Content Include="Imgs\gen5\550.gif" />
-    <Content Include="Imgs\gen5\551.gif" />
-    <Content Include="Imgs\gen5\552.gif" />
-    <Content Include="Imgs\gen5\553.gif" />
-    <Content Include="Imgs\gen5\554.gif" />
-    <Content Include="Imgs\gen5\555-zen.gif" />
-    <Content Include="Imgs\gen5\555.gif" />
-    <Content Include="Imgs\gen5\556.gif" />
-    <Content Include="Imgs\gen5\557.gif" />
-    <Content Include="Imgs\gen5\558.gif" />
-    <Content Include="Imgs\gen5\559.gif" />
-    <Content Include="Imgs\gen5\560.gif" />
-    <Content Include="Imgs\gen5\561.gif" />
-    <Content Include="Imgs\gen5\562.gif" />
-    <Content Include="Imgs\gen5\563.gif" />
-    <Content Include="Imgs\gen5\564.gif" />
-    <Content Include="Imgs\gen5\565.gif" />
-    <Content Include="Imgs\gen5\566.gif" />
-    <Content Include="Imgs\gen5\567.gif" />
-    <Content Include="Imgs\gen5\568.gif" />
-    <Content Include="Imgs\gen5\569.gif" />
-    <Content Include="Imgs\gen5\570.gif" />
-    <Content Include="Imgs\gen5\571.gif" />
-    <Content Include="Imgs\gen5\572.gif" />
-    <Content Include="Imgs\gen5\573.gif" />
-    <Content Include="Imgs\gen5\574.gif" />
-    <Content Include="Imgs\gen5\575.gif" />
-    <Content Include="Imgs\gen5\576.gif" />
-    <Content Include="Imgs\gen5\577.gif" />
-    <Content Include="Imgs\gen5\578.gif" />
-    <Content Include="Imgs\gen5\579.gif" />
-    <Content Include="Imgs\gen5\580.gif" />
-    <Content Include="Imgs\gen5\581.gif" />
-    <Content Include="Imgs\gen5\582.gif" />
-    <Content Include="Imgs\gen5\583.gif" />
-    <Content Include="Imgs\gen5\584.gif" />
-    <Content Include="Imgs\gen5\585-autumn.gif" />
-    <Content Include="Imgs\gen5\585-summer.gif" />
-    <Content Include="Imgs\gen5\585-winter.gif" />
-    <Content Include="Imgs\gen5\585.gif" />
-    <Content Include="Imgs\gen5\586-autumn.gif" />
-    <Content Include="Imgs\gen5\586-summer.gif" />
-    <Content Include="Imgs\gen5\586-winter.gif" />
-    <Content Include="Imgs\gen5\586.gif" />
-    <Content Include="Imgs\gen5\587.gif" />
-    <Content Include="Imgs\gen5\588.gif" />
-    <Content Include="Imgs\gen5\589.gif" />
-    <Content Include="Imgs\gen5\590.gif" />
-    <Content Include="Imgs\gen5\591.gif" />
-    <Content Include="Imgs\gen5\592.gif" />
-    <Content Include="Imgs\gen5\592f.gif" />
-    <Content Include="Imgs\gen5\593.gif" />
-    <Content Include="Imgs\gen5\593f.gif" />
-    <Content Include="Imgs\gen5\594.gif" />
-    <Content Include="Imgs\gen5\595.gif" />
-    <Content Include="Imgs\gen5\596.gif" />
-    <Content Include="Imgs\gen5\597.gif" />
-    <Content Include="Imgs\gen5\598.gif" />
-    <Content Include="Imgs\gen5\599.gif" />
-    <Content Include="Imgs\gen5\600.gif" />
-    <Content Include="Imgs\gen5\601.gif" />
-    <Content Include="Imgs\gen5\602.gif" />
-    <Content Include="Imgs\gen5\603.gif" />
-    <Content Include="Imgs\gen5\604.gif" />
-    <Content Include="Imgs\gen5\605.gif" />
-    <Content Include="Imgs\gen5\606.gif" />
-    <Content Include="Imgs\gen5\607.gif" />
-    <Content Include="Imgs\gen5\608.gif" />
-    <Content Include="Imgs\gen5\609.gif" />
-    <Content Include="Imgs\gen5\610.gif" />
-    <Content Include="Imgs\gen5\611.gif" />
-    <Content Include="Imgs\gen5\612.gif" />
-    <Content Include="Imgs\gen5\613.gif" />
-    <Content Include="Imgs\gen5\614.gif" />
-    <Content Include="Imgs\gen5\615.gif" />
-    <Content Include="Imgs\gen5\616.gif" />
-    <Content Include="Imgs\gen5\617.gif" />
-    <Content Include="Imgs\gen5\618.gif" />
-    <Content Include="Imgs\gen5\619.gif" />
-    <Content Include="Imgs\gen5\620.gif" />
-    <Content Include="Imgs\gen5\621.gif" />
-    <Content Include="Imgs\gen5\622.gif" />
-    <Content Include="Imgs\gen5\623.gif" />
-    <Content Include="Imgs\gen5\624.gif" />
-    <Content Include="Imgs\gen5\625.gif" />
-    <Content Include="Imgs\gen5\626.gif" />
-    <Content Include="Imgs\gen5\627.gif" />
-    <Content Include="Imgs\gen5\628.gif" />
-    <Content Include="Imgs\gen5\629.gif" />
-    <Content Include="Imgs\gen5\630.gif" />
-    <Content Include="Imgs\gen5\631.gif" />
-    <Content Include="Imgs\gen5\632.gif" />
-    <Content Include="Imgs\gen5\633.gif" />
-    <Content Include="Imgs\gen5\634.gif" />
-    <Content Include="Imgs\gen5\635.gif" />
-    <Content Include="Imgs\gen5\636.gif" />
-    <Content Include="Imgs\gen5\637.gif" />
-    <Content Include="Imgs\gen5\638.gif" />
-    <Content Include="Imgs\gen5\639.gif" />
-    <Content Include="Imgs\gen5\640.gif" />
-    <Content Include="Imgs\gen5\641.gif" />
-    <Content Include="Imgs\gen5\642.gif" />
-    <Content Include="Imgs\gen5\643.gif" />
-    <Content Include="Imgs\gen5\644.gif" />
-    <Content Include="Imgs\gen5\645.gif" />
-    <Content Include="Imgs\gen5\646-black.gif" />
-    <Content Include="Imgs\gen5\646-white.gif" />
-    <Content Include="Imgs\gen5\646.gif" />
-    <Content Include="Imgs\gen5\647.gif" />
-    <Content Include="Imgs\gen5\648.gif" />
-    <Content Include="Imgs\gen5\649.gif" />
+    <Content Include="Imgs\gen5\001.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\002.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\003.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\004.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\005.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\006.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\007.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\008.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\009.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\010.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\011.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\012.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\013.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\014.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\015.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\016.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\017.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\018.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\019.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\020.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\021.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\022.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\023.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\024.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\025.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\026.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\027.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\028.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\029.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\030.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\031.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\032.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\033.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\034.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\035.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\036.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\037.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\038.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\039.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\040.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\041.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\042.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\043.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\044.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\045.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\046.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\047.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\048.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\049.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\050.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\051.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\052.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\053.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\054.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\055.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\056.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\057.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\058.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\059.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\060.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\061.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\062.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\063.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\064.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\065.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\066.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\067.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\068.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\069.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\070.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\071.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\072.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\073.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\074.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\075.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\076.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\077.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\078.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\079.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\080.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\081.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\082.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\083.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\084.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\085.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\086.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\087.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\088.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\089.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\090.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\091.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\092.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\093.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\094.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\095.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\096.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\097.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\098.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\099.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\100.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\101.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\102.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\103.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\104.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\105.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\106.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\107.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\108.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\109.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\110.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\111.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\112.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\113.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\114.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\115.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\116.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\117.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\118.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\119.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\120.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\121.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\122.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\123.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\124.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\125.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\126.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\127.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\128.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\129.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\130.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\131.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\132.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\133.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\134.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\135.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\136.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\137.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\138.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\139.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\140.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\141.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\142.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\143.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\144.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\145.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\146.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\147.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\148.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\149.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\150.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\151.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\152.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\153.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\154.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\155.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\156.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\157.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\158.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\159.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\160.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\161.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\162.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\163.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\164.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\165.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\166.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\167.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\168.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\169.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\170.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\171.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\172.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\173.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\174.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\175.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\176.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\177.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\178.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\179.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\180.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\181.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\182.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\183.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\184.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\185.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\186.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\187.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\188.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\189.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\190.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\191.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\192.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\193.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\194.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\195.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\196.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\197.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\198.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\199.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\200.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\201-b.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\202.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\203.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\204.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\205.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\206.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\207.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\208.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\209.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\210.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\211.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\212.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\213.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\214.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\215.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\216.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\217.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\218.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\219.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\220.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\221.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\222.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\223.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\224.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\225.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\226.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\227.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\228.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\229.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\230.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\231.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\232.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\233.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\234.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\235.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\236.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\237.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\238.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\239.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\240.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\241.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\242.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\243.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\244.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\245.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\246.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\247.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\248.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\249.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\250.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\252.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\253.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\254.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\255.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\256.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\257.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\258.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\259.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\260.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\261.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\262.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\263.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\264.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\265.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\266.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\267.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\268.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\269.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\270.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\271.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\272.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\273.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\274.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\275.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\276.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\277.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\278.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\279.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\280.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\281.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\282.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\283.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\284.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\285.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\286.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\287.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\288.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\289.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\290.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\291.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\292.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\293.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\294.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\295.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\296.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\297.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\298.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\299.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\300.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\301.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\302.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\303.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\304.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\305.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\306.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\307.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\308.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\309.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\310.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\311.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\312.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\313.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\314.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\315.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\316.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\317.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\318.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\319.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\320.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\321.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\322.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\323.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\324.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\325.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\326.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\327.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\328.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\329.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\330.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\331.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\332.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\333.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\334.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\335.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\336.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\337.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\338.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\339.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\340.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\341.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\342.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\343.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\344.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\345.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\346.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\347.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\348.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\349.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\350.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\351.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\352.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\353.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\354.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\355.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\356.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\357.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\358.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\359.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\360.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\361.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\362.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\363.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\364.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\365.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\366.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\367.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\368.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\369.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\370.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\371.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\372.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\373.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\374.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\375.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\377.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\378.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\379.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\380.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\381.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\382.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\383.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\384.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\385.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\386.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\387.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\388.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\389.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\390.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\391.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\392.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\393.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\394.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\395.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\396.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\397.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\398.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\399.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\400.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\401.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\402.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\403.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\404.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\405.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\406.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\407.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\408.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\409.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\410.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\411.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\412.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\413.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\414.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\415.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\416.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\417.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\418.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\419.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\420.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\421-sunshine.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\421.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\422-east.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\422.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\423-east.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\423.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\424.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\425.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\426.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\427.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\428.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\429.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\430.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\431.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\432.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\433.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\434.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\435.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\436.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\437.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\438.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\439.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\440.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\441.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\442.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\443.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\444.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\445.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\446.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\447.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\448.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\449.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\450.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\451.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\452.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\453.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\454.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\455.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\456.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\457.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\458.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\459.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\460.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\461.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\462.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\463.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\464.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\465.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\466.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\467.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\468.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\469.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\470.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\471.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\472.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\473.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\474.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\475.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\476.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\477.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\478.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\479.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\480.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\481.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\482.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\483.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\484.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\485.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\486.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\487.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\488.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\489.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\490.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\491.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\492.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\493.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\494.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\495.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\496.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\497.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\498.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\499.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\500.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\501.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\502.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\503.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\504.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\505.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\506.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\507.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\508.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\509.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\510.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\511.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\512.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\513.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\514.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\515.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\516.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\517.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\518.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\519.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\520.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\521.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\521f.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\522.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\523.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\524.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\525.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\526.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\527.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\528.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\529.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\530.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\531.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\532.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\533.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\534.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\535.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\536.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\537.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\538.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\539.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\540.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\541.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\542.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\543.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\544.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\545.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\546.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\547.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\548.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\549.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\550-blue.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\550.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\551.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\552.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\553.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\554.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\555-zen.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\555.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\556.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\557.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\558.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\559.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\560.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\561.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\562.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\563.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\564.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\565.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\566.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\567.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\568.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\569.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\570.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\571.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\572.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\573.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\574.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\575.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\576.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\577.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\578.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\579.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\580.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\581.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\582.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\583.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\584.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\585-autumn.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\585-summer.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\585-winter.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\585.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\586-autumn.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\586-summer.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\586-winter.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\586.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\587.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\588.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\589.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\590.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\591.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\592.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\592f.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\593.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\593f.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\594.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\595.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\596.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\597.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\598.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\599.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\600.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\601.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\602.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\603.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\604.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\605.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\606.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\607.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\608.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\609.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\610.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\611.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\612.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\613.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\614.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\615.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\616.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\617.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\618.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\619.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\620.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\621.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\622.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\623.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\624.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\625.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\626.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\627.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\628.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\629.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\630.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\631.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\632.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\633.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\634.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\635.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\636.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\637.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\638.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\639.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\640.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\641.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\642.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\643.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\644.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\645.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\646-black.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\646-white.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\646.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\647.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\648.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imgs\gen5\649.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

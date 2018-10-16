@@ -60,6 +60,15 @@
             this.lblEncontros = new System.Windows.Forms.Label();
             this.pcbTarget = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gbxCredits = new System.Windows.Forms.GroupBox();
+            this.llbGit = new System.Windows.Forms.LinkLabel();
+            this.lblGit = new System.Windows.Forms.Label();
+            this.llbTwich = new System.Windows.Forms.LinkLabel();
+            this.lblTwitch = new System.Windows.Forms.Label();
+            this.llbTwitter = new System.Windows.Forms.LinkLabel();
+            this.lblTwitter = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
+            this.lblCredits1 = new System.Windows.Forms.Label();
             this.gbxTeclas = new System.Windows.Forms.GroupBox();
             this.btnSaveHotkeys = new System.Windows.Forms.Button();
             this.txtSubKey = new System.Windows.Forms.TextBox();
@@ -71,24 +80,15 @@
             this.txtSavePath = new System.Windows.Forms.TextBox();
             this.lblDestino = new System.Windows.Forms.Label();
             this.fbdSavePath = new System.Windows.Forms.FolderBrowserDialog();
-            this.gbxCredits = new System.Windows.Forms.GroupBox();
-            this.lblCredits1 = new System.Windows.Forms.Label();
-            this.lblAutor = new System.Windows.Forms.Label();
-            this.lblTwitter = new System.Windows.Forms.Label();
-            this.llbTwitter = new System.Windows.Forms.LinkLabel();
-            this.lblTwitch = new System.Windows.Forms.Label();
-            this.llbTwich = new System.Windows.Forms.LinkLabel();
-            this.lblGit = new System.Windows.Forms.Label();
-            this.llbGit = new System.Windows.Forms.LinkLabel();
             this.tabMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbxGen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTarget)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.gbxCredits.SuspendLayout();
             this.gbxTeclas.SuspendLayout();
             this.gbxArquivos.SuspendLayout();
-            this.gbxCredits.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
@@ -433,6 +433,101 @@
             this.tabPage2.Text = "Config";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // gbxCredits
+            // 
+            this.gbxCredits.Controls.Add(this.llbGit);
+            this.gbxCredits.Controls.Add(this.lblGit);
+            this.gbxCredits.Controls.Add(this.llbTwich);
+            this.gbxCredits.Controls.Add(this.lblTwitch);
+            this.gbxCredits.Controls.Add(this.llbTwitter);
+            this.gbxCredits.Controls.Add(this.lblTwitter);
+            this.gbxCredits.Controls.Add(this.lblAutor);
+            this.gbxCredits.Controls.Add(this.lblCredits1);
+            this.gbxCredits.Location = new System.Drawing.Point(6, 161);
+            this.gbxCredits.Name = "gbxCredits";
+            this.gbxCredits.Size = new System.Drawing.Size(610, 144);
+            this.gbxCredits.TabIndex = 2;
+            this.gbxCredits.TabStop = false;
+            this.gbxCredits.Text = "Credits";
+            // 
+            // llbGit
+            // 
+            this.llbGit.AutoSize = true;
+            this.llbGit.Location = new System.Drawing.Point(61, 118);
+            this.llbGit.Name = "llbGit";
+            this.llbGit.Size = new System.Drawing.Size(50, 13);
+            this.llbGit.TabIndex = 7;
+            this.llbGit.TabStop = true;
+            this.llbGit.Text = "LuizHMS";
+            this.llbGit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbGit_LinkClicked);
+            // 
+            // lblGit
+            // 
+            this.lblGit.AutoSize = true;
+            this.lblGit.Location = new System.Drawing.Point(19, 118);
+            this.lblGit.Name = "lblGit";
+            this.lblGit.Size = new System.Drawing.Size(43, 13);
+            this.lblGit.TabIndex = 6;
+            this.lblGit.Text = "GitHub:";
+            // 
+            // llbTwich
+            // 
+            this.llbTwich.AutoSize = true;
+            this.llbTwich.Location = new System.Drawing.Point(61, 90);
+            this.llbTwich.Name = "llbTwich";
+            this.llbTwich.Size = new System.Drawing.Size(50, 13);
+            this.llbTwich.TabIndex = 5;
+            this.llbTwich.TabStop = true;
+            this.llbTwich.Text = "LuizHMS";
+            this.llbTwich.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwich_LinkClicked);
+            // 
+            // lblTwitch
+            // 
+            this.lblTwitch.AutoSize = true;
+            this.lblTwitch.Location = new System.Drawing.Point(19, 90);
+            this.lblTwitch.Name = "lblTwitch";
+            this.lblTwitch.Size = new System.Drawing.Size(42, 13);
+            this.lblTwitch.TabIndex = 4;
+            this.lblTwitch.Text = "Twitch:";
+            // 
+            // llbTwitter
+            // 
+            this.llbTwitter.AutoSize = true;
+            this.llbTwitter.Location = new System.Drawing.Point(61, 62);
+            this.llbTwitter.Name = "llbTwitter";
+            this.llbTwitter.Size = new System.Drawing.Size(73, 13);
+            this.llbTwitter.TabIndex = 3;
+            this.llbTwitter.TabStop = true;
+            this.llbTwitter.Text = "@LuizHMS22";
+            this.llbTwitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwitter_LinkClicked);
+            // 
+            // lblTwitter
+            // 
+            this.lblTwitter.AutoSize = true;
+            this.lblTwitter.Location = new System.Drawing.Point(19, 62);
+            this.lblTwitter.Name = "lblTwitter";
+            this.lblTwitter.Size = new System.Drawing.Size(45, 13);
+            this.lblTwitter.TabIndex = 2;
+            this.lblTwitter.Text = "Twitter: ";
+            // 
+            // lblAutor
+            // 
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Location = new System.Drawing.Point(16, 40);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(84, 13);
+            this.lblAutor.TabIndex = 1;
+            this.lblAutor.Text = "Autor: Luiz HMS";
+            // 
+            // lblCredits1
+            // 
+            this.lblCredits1.AutoSize = true;
+            this.lblCredits1.Location = new System.Drawing.Point(6, 16);
+            this.lblCredits1.Name = "lblCredits1";
+            this.lblCredits1.Size = new System.Drawing.Size(105, 13);
+            this.lblCredits1.TabIndex = 0;
+            this.lblCredits1.Text = "Shiny Hunter Helper:";
+            // 
             // gbxTeclas
             // 
             this.gbxTeclas.Controls.Add(this.btnSaveHotkeys);
@@ -538,101 +633,6 @@
             // 
             this.fbdSavePath.RootFolder = System.Environment.SpecialFolder.MyComputer;
             // 
-            // gbxCredits
-            // 
-            this.gbxCredits.Controls.Add(this.llbGit);
-            this.gbxCredits.Controls.Add(this.lblGit);
-            this.gbxCredits.Controls.Add(this.llbTwich);
-            this.gbxCredits.Controls.Add(this.lblTwitch);
-            this.gbxCredits.Controls.Add(this.llbTwitter);
-            this.gbxCredits.Controls.Add(this.lblTwitter);
-            this.gbxCredits.Controls.Add(this.lblAutor);
-            this.gbxCredits.Controls.Add(this.lblCredits1);
-            this.gbxCredits.Location = new System.Drawing.Point(6, 161);
-            this.gbxCredits.Name = "gbxCredits";
-            this.gbxCredits.Size = new System.Drawing.Size(610, 144);
-            this.gbxCredits.TabIndex = 2;
-            this.gbxCredits.TabStop = false;
-            this.gbxCredits.Text = "Credits";
-            // 
-            // lblCredits1
-            // 
-            this.lblCredits1.AutoSize = true;
-            this.lblCredits1.Location = new System.Drawing.Point(6, 16);
-            this.lblCredits1.Name = "lblCredits1";
-            this.lblCredits1.Size = new System.Drawing.Size(105, 13);
-            this.lblCredits1.TabIndex = 0;
-            this.lblCredits1.Text = "Shiny Hunter Helper:";
-            // 
-            // lblAutor
-            // 
-            this.lblAutor.AutoSize = true;
-            this.lblAutor.Location = new System.Drawing.Point(16, 40);
-            this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(84, 13);
-            this.lblAutor.TabIndex = 1;
-            this.lblAutor.Text = "Autor: Luiz HMS";
-            // 
-            // lblTwitter
-            // 
-            this.lblTwitter.AutoSize = true;
-            this.lblTwitter.Location = new System.Drawing.Point(19, 62);
-            this.lblTwitter.Name = "lblTwitter";
-            this.lblTwitter.Size = new System.Drawing.Size(45, 13);
-            this.lblTwitter.TabIndex = 2;
-            this.lblTwitter.Text = "Twitter: ";
-            // 
-            // llbTwitter
-            // 
-            this.llbTwitter.AutoSize = true;
-            this.llbTwitter.Location = new System.Drawing.Point(61, 62);
-            this.llbTwitter.Name = "llbTwitter";
-            this.llbTwitter.Size = new System.Drawing.Size(73, 13);
-            this.llbTwitter.TabIndex = 3;
-            this.llbTwitter.TabStop = true;
-            this.llbTwitter.Text = "@LuizHMS22";
-            this.llbTwitter.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwitter_LinkClicked);
-            // 
-            // lblTwitch
-            // 
-            this.lblTwitch.AutoSize = true;
-            this.lblTwitch.Location = new System.Drawing.Point(19, 90);
-            this.lblTwitch.Name = "lblTwitch";
-            this.lblTwitch.Size = new System.Drawing.Size(42, 13);
-            this.lblTwitch.TabIndex = 4;
-            this.lblTwitch.Text = "Twitch:";
-            // 
-            // llbTwich
-            // 
-            this.llbTwich.AutoSize = true;
-            this.llbTwich.Location = new System.Drawing.Point(61, 90);
-            this.llbTwich.Name = "llbTwich";
-            this.llbTwich.Size = new System.Drawing.Size(50, 13);
-            this.llbTwich.TabIndex = 5;
-            this.llbTwich.TabStop = true;
-            this.llbTwich.Text = "LuizHMS";
-            this.llbTwich.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbTwich_LinkClicked);
-            // 
-            // lblGit
-            // 
-            this.lblGit.AutoSize = true;
-            this.lblGit.Location = new System.Drawing.Point(19, 118);
-            this.lblGit.Name = "lblGit";
-            this.lblGit.Size = new System.Drawing.Size(43, 13);
-            this.lblGit.TabIndex = 6;
-            this.lblGit.Text = "GitHub:";
-            // 
-            // llbGit
-            // 
-            this.llbGit.AutoSize = true;
-            this.llbGit.Location = new System.Drawing.Point(61, 118);
-            this.llbGit.Name = "llbGit";
-            this.llbGit.Size = new System.Drawing.Size(50, 13);
-            this.llbGit.TabIndex = 7;
-            this.llbGit.TabStop = true;
-            this.llbGit.Text = "LuizHMS";
-            this.llbGit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llbGit_LinkClicked);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -649,12 +649,12 @@
             this.gbxGen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTarget)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.gbxCredits.ResumeLayout(false);
+            this.gbxCredits.PerformLayout();
             this.gbxTeclas.ResumeLayout(false);
             this.gbxTeclas.PerformLayout();
             this.gbxArquivos.ResumeLayout(false);
             this.gbxArquivos.PerformLayout();
-            this.gbxCredits.ResumeLayout(false);
-            this.gbxCredits.PerformLayout();
             this.ResumeLayout(false);
 
         }
